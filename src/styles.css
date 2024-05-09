@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+
+}
+
+
+
+html{
+ font-size:16px;
+
+   box-sizing: border-box;
+
+   width:100%;
+   height:100vh;
+}
+
+body{
+    white-space: nowrap;
+
+
+    position: relative;
+    font-family: 'Nunito' , sans-serif;
+margin:0;
+padding:0;
+width:100%;
+height:100vh;
+    background:linear-gradient(to top left , rgb(126, 13, 126), rgb(193, 65, 45) 100%) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+  display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: #333;
+
+}
+main{
+    width:96%;
+    height:75vh;
+
+display: flex;
+flex-direction: row;
+background-color: rgba(255, 255, 255, 0.35);
+backdrop-filter: blur(200px);
+filter:blur();
+border-radius:9px;
+
+
+
+overflow: hidden;
+
+
+
+
+
+ 
+
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+
+ margin-top:10%;
+
+
+
+
+}
+
+.left_part{
+   justify-self: flex-start;
+    
+    display: flex;
+flex-direction: column;
+    width:50%;
+    transition: all 0.7s;
+
+}
+.right_part{
+   
+    /* backdrop-filter: blur(50%);
+    filter:blur(); */
+    
+    justify-self: flex-end;
+    width:50%;
+display: flex;
+flex-direction: column;
+margin:0 auto;
+transition: all 0.7s;
+
+}
+#button_container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+margin-left: 50%;
+
+height:inherit;
+
+
+
+gap:1%;
+
+
+
+width:150px;
+
+}
+.hover:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.part--active{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.part--active .player {
+    font-weight: 800;
+  }
+
+  .part--active .score {
+    font-weight: 500;
+  }
+
+  .part--active .current {
+    opacity: 1;
+  }
+  
+#dice_container{
+   position: absolute;
+    width:100px;
+    height:100px;
+bottom:350px;
+right:95px;
+box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+
+
+}
+.hide{
+    display: none;
+}
+.num{
+    
+   width:100%;
+   height:100%;
+   
+
+}
+.btn{
+    transform: translateX(-50% );
+    /* transform:translateY(-50%); */
+
+ 
+    text-transform: uppercase;
+    font-size:1rem;
+
+  opacity: 1;
+border:none;
+
+font-family: inherit;
+color: #444;
+   
+   cursor:pointer;
+   background-color: rgba(255, 255, 255, 0.6);
+   backdrop-filter: blur(10px);
+   transition: all 0.2s;
+   padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+   border-radius: 50rem;
+   box-shadow: 0 1.4rem 3rem rgba(0, 0, 0, 0.1);
+
+}
+.btn::first-letter {
+    font-size: 1.5rem;
+    display: inline-block;
+    
+  }
+
+
+.player{
+    font-size: 2.5rem;
+    font-weight:600;
+justify-self: center;
+align-self: center;
+margin:85px;
+margin-bottom: 0;
+
+
+}
+
+.score{
+    font-size: 6rem;
+    align-self: center;
+    font-weight: 300;
+    color: #c7365f;
+  
+
+
+}
+.dice_score{
+   width:12rem;
+
+margin: 75px auto 30px auto;
+border-radius:12px;
+
+    height:150px;
+
+text-align: center;
+background-color: #c7365f;
+color: #ddd;
+font-size: 1.44rem;
+opacity: 0.85;
+padding:2rem;
+padding-bottom: 9rem;
+transition: all 0.75s;
+
+}
+.button1{
+    width:250px;
+     margin-left:100px;
+   margin-bottom: 250px;
+}
+.button2{
+    width:175px;
+     margin-left:1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.button3{
+    width:150px; 
+    margin-bottom: 30px;
+}
+.current_score{
+    margin-top:1rem;
+    font-size:3.5rem;
+    font-weight: 700;
+padding-bottom: 1.5rem;
+
+
+
+}
+.player--winner {
+    background-color: #2f2f2f;
+  }
+  
+  .player--winner .player {
+    font-weight: 700;
+    color: #c7365f;
+  }
+
+@media(min-width:1100px){
+   
+    body{
+        font-size: 20px;
+    }
+    main{
+        width:66%;
+        height:80vh;
+        margin-top:2%;
+    }
+.player{
+    margin:110px;
+    margin-left: 136px;
+    margin-bottom: 0;
+    ;
+font-size: 3.3rem;
+font-weight: 900;
+
+}
+.score{
+    font-size: 7rem;
+}
+
+
+.dice_score{
+    width:16rem;
+  
+
+
+}
+.button1{
+    width:250px;
+     margin-left:100px;
+   margin-bottom: 250px;
+}
+.button2{
+    width:225px;
+     margin-left:4.89rem;
+    margin-bottom: 2.5rem;
+}
+
+.button3{
+    width:175px; 
+    margin-left:2rem;
+
+    margin-bottom: 30px;
+}
+.btn{
+    padding: 1rem 3rem 1rem 3em;
+}
+  }
+
