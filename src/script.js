@@ -36,6 +36,8 @@ const init = function(){
     document.querySelector(`.player1`).classList.remove('player--winner');
     diceContainer.classList.add('hide');
 document.querySelector('.left_part').classList.add('part--active');
+document.querySelector('.right_part').classList.remove('part--active');
+
 document.getElementById(`currentScore--0`).textContent = 0;
 document.getElementById(`currentScore--1`).textContent = 0;
 
